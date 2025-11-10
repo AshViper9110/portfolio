@@ -1,0 +1,102 @@
+
+.Main {
+    background-color: rgba(0, 255, 255, 0.5);
+    display: flex;
+    justify-content: flex-end;
+}
+.Title {
+    margin: 0px 10px;
+    align-items: center;
+}
+.Menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+.Menu p {
+    margin: 0px 10px;
+}
+.Profile {
+    display: flex;
+    
+}
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+div.icon {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.self-introduction {
+    box-sizing: border-box;
+    flex:1;
+    background-color: rgba(128, 200, 255, 0.4);
+}
+.mywork {
+    box-sizing: border-box;
+    flex: 1;
+    background-color: rgba(128, 255, 255, 0.4);
+}
+.mywork-list-main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.mywork-list {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 5px;
+}
+.mywork-list h4 {
+    margin:5px 5px;
+}
+.mywork-photo {
+    width: 100%;
+    height: auto;
+}
+.ProfileContentsCon {
+    display: flex;
+    justify-content: center;
+}
+.ProfileContents {
+    width: 400px;
+    background-color: rgba(200, 200, 200, 0.4);
+    text-align: center;
+}
+.ProfileListCon {
+    display: flex;
+    justify-content: center;
+}
+.FormCon {
+    display: flex;
+    justify-content: center;
+}
+.FormContents {
+    width: 400px;
+    background-color: rgba(250, 250, 250, 0.7);
+    text-align: center;
+}
+
+@media(max-width:700px) {
+    .mywork-list-main {
+        flex-direction: column;
+    }
+
+    .mywork-list {
+        align-items: flex-start;
+    }
+    .mywork-list-main {
+        flex-direction: column;
+    }
+}
+   

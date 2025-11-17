@@ -1,102 +1,141 @@
+/* --- 全体のテーマ --- */
+body {
+  margin: 0;
+  background-color: #111;
+  color: #eee;
+  font-family: "Segoe UI", sans-serif;
+}
 
+/* --- ヘッダー --- */
 .Main {
-    background-color: rgba(0, 255, 255, 0.5);
-    display: flex;
-    justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
+
 .Title {
-    margin: 0px 10px;
-    align-items: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
 }
+
 .Menu {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items:flex-end;
+  display: flex;
+  align-items: center;
 }
+
 .Menu p {
-    margin: 0px 10px;
+  margin: 0px 15px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
 }
+.Menu p:hover {
+  color: #fff;
+}
+
+/* --- プロフィール --- */
 .Profile {
-    display: flex;
-    
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
+
+/* アイコン画像 */
 .circle-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #444;
 }
-div.icon {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.icon {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-div.self-introduction {
-    box-sizing: border-box;
-    flex:1;
-    background-color: rgba(128, 200, 255, 0.4);
+
+.self-introduction {
+  flex: 1;
+  background-color: rgba(40, 40, 40, 0.7);
+  padding: 20px;
+  border-radius: 8px;
 }
+
+/* --- 作品一覧 --- */
 .mywork {
-    box-sizing: border-box;
-    flex: 1;
-    background-color: rgba(128, 255, 255, 0.4);
+  flex: 1;
+  background-color: rgba(30, 30, 30, 0.7);
+  padding: 20px;
+  border-radius: 8px;
 }
+
 .mywork-list-main {
-    display: flex;
-    flex: 1;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .mywork-list {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5px 5px;
+  width: 200px;
+  background-color: rgba(50, 50, 50, 0.7);
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.mywork-list h4 {
-    margin:5px 5px;
+
+.mywork-list:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
 }
+
 .mywork-photo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
-.ProfileContentsCon {
-    display: flex;
-    justify-content: center;
-}
-.ProfileContents {
-    width: 400px;
-    background-color: rgba(200, 200, 200, 0.4);
-    text-align: center;
-}
-.ProfileListCon {
-    display: flex;
-    justify-content: center;
-}
+
+/* --- プロフィール詳細 --- */
+.ProfileContentsCon,
+.ProfileListCon,
 .FormCon {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
+
+.ProfileContents,
 .FormContents {
-    width: 400px;
-    background-color: rgba(250, 250, 250, 0.7);
+  width: 400px;
+  background-color: rgba(50, 50, 50, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* --- メディアクエリ（スマホ対応） --- */
+@media (max-width: 700px) {
+  .Profile {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-}
+  }
 
-@media(max-width:700px) {
-    .mywork-list-main {
-        flex-direction: column;
-    }
+  .mywork-list-main {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .mywork-list {
-        align-items: flex-start;
-    }
-    .mywork-list-main {
-        flex-direction: column;
-    }
+  .mywork-list {
+    width: 90%;
+  }
 }
-   

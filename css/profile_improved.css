@@ -1,0 +1,163 @@
+
+/* --- Improved Profile Page Styles --- */
+
+.ProfileCard {
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ProfileHeader {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #444;
+}
+
+.circle-image-small {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #666;
+}
+
+.ProfileName h3 {
+  font-size: 32px;
+  margin: 0 0 5px 0;
+  color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.sub-text {
+  font-size: 18px;
+  color: #aaa;
+  margin: 0 0 15px 0;
+}
+
+.role-text {
+  font-size: 16px;
+  color: #ddd;
+  background-color: #333;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0;
+}
+
+.ProfileSection {
+  margin-bottom: 40px;
+}
+
+.SectionTitle {
+  font-size: 20px;
+  color: #eee;
+  border-left: 4px solid #007acc; /* Accent color */
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/* Info Grid */
+.InfoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.InfoItem {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.InfoItem .Label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.InfoItem .Value {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* Skill Grid */
+.SkillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.SkillItem {
+  background-color: rgba(40, 40, 40, 0.6);
+  border: 1px solid #444;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.SkillItem:hover {
+  transform: translateY(-3px);
+  background-color: rgba(50, 50, 50, 0.8);
+  border-color: #666;
+}
+
+.SkillName {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.SkillLevel {
+  display: block;
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* Qualification List */
+.QualificationList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.QualificationList li {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #ddd;
+  border-left: 3px solid #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .ProfileHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .ProfileCard {
+    padding: 20px;
+  }
+  
+  .InfoGrid, .SkillGrid, .QualificationList {
+    grid-template-columns: 1fr;
+  }
+}

@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/profile_improved.css" />
   </head>
   <body>
     <div class="Main">
@@ -15,39 +16,78 @@
         <p><a href="index.html">Top</a></p>
       </div>
     </div>
-    <div class="ProfileContentsCon">
-      <div class="ProfileContents">
-        <h2>基本情報</h2>
-        <p>琴似工業高等学校　卒業</p>
-        <p>吉田学園情報ビジネス専門学校　在学</p>
-        <p>ゲームエンジニア学科サーバーエンジニア専攻 1年</p>
-        <h3>平尾海翔</h3>
-        <p>2005年10月18日 出生</p>
-        <p>B型</p>
-        <p>てんびん座</p>
-        <p>酉年</p>
-        <div class="ProfileListCon">
-          <div class="ProfileList">
-            <h2>取得資格</h2>
-            <ul>
-              <li>危険物取扱者 乙4</li>
-              <li>計算技術検定 3級</li>
-            </ul>
+
+    <div class="ContentWrapper">
+      <div class="ProfileCard">
+        <div class="ProfileHeader">
+          <div class="ProfileIcon">
+             <!-- Placeholder for icon if needed, or just name -->
+             <img src="photo/icon.webp" alt="Icon" class="circle-image-small">
+          </div>
+          <div class="ProfileName">
+            <h3>平尾 海翔</h3>
+            <p class="sub-text">Hirao Kaito</p>
+            <p class="role-text">ゲームエンジニア学科 サーバーエンジニア専攻 1年</p>
           </div>
         </div>
-        <div class="ProfileListCon">
-          <div class="ProfileList">
-            <h2>使用言語  : おおよその経験</h2>
-            <ul>
-              <li>Java (Mod作成まで)</li>
-              <li>C# (Unityでゲーム作成)</li>
-              <li>HTML (portfolio作成)</li>
-              <li>CSS (portfolio作成)</li>
-              <li>JavaScript (ブラウザゲーム)</li>
-              <li>PHP (初心者)</li>
-              <li>Lua (ゲーム上で動く自立プログラム等)</li>
-            </ul>
+
+        <div class="ProfileSection">
+          <h3 class="SectionTitle">基本情報</h3>
+          <div class="InfoGrid">
+            <div class="InfoItem">
+              <span class="Label">生年月日</span>
+              <span class="Value">2005年10月18日 (てんびん座 / 酉年)</span>
+            </div>
+            <div class="InfoItem">
+              <span class="Label">血液型</span>
+              <span class="Value">B型</span>
+            </div>
+            <div class="InfoItem">
+              <span class="Label">学歴</span>
+              <span class="Value">
+                琴似工業高等学校 卒業<br>
+                吉田学園情報ビジネス専門学校 在学
+              </span>
+            </div>
           </div>
+        </div>
+
+        <div class="ProfileSection">
+          <h3 class="SectionTitle">スキル・経験</h3>
+          <div class="SkillGrid">
+            <div class="SkillItem">
+              <span class="SkillName">Java</span>
+              <span class="SkillLevel">Mod作成</span>
+            </div>
+            <div class="SkillItem">
+              <span class="SkillName">C#</span>
+              <span class="SkillLevel">Unityゲーム作成</span>
+            </div>
+            <div class="SkillItem">
+              <span class="SkillName">HTML/CSS</span>
+              <span class="SkillLevel">Portfolio作成</span>
+            </div>
+            <div class="SkillItem">
+              <span class="SkillName">JavaScript</span>
+              <span class="SkillLevel">ブラウザゲーム</span>
+            </div>
+            <div class="SkillItem">
+              <span class="SkillName">PHP</span>
+              <span class="SkillLevel">初心者</span>
+            </div>
+            <div class="SkillItem">
+              <span class="SkillName">Lua</span>
+              <span class="SkillLevel">スクリプト制御</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ProfileSection">
+          <h3 class="SectionTitle">取得資格</h3>
+          <ul class="QualificationList">
+            <li>危険物取扱者 乙4</li>
+            <li>計算技術検定 3級</li>
+          </ul>
         </div>
       </div>
     </div>

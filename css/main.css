@@ -1,18 +1,18 @@
-/* --- 全体のテーマ（黒ベース・モノクロ） --- */
+/* --- 全体のテーマ（黒ベース・紫アクセント） --- */
 body {
   margin: 0;
-  background-color: #000; /* 完全黒 */
-  color: #eee; /* 白すぎず読みやすい */
+  background-color: #050505; /* ほぼ完全黒 */
+  color: #eee;
   font-family: "Segoe UI", sans-serif;
 }
 
 /* --- ヘッダー --- */
 .Main {
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: rgba(10, 10, 10, 0.95);
   display: flex;
   justify-content: space-between;
   padding: 15px 25px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #bf5af2; /* Purple accent */
 }
 
 .Title {
@@ -36,7 +36,7 @@ body {
   transition: 0.2s;
 }
 .Menu p:hover {
-  color: #fff;
+  color: #bf5af2; /* Purple hover */
 }
 
 .Menu a {
@@ -44,7 +44,7 @@ body {
   text-decoration: none;
 }
 .Menu a:hover {
-  color: #fff;
+  color: #bf5af2; /* Purple hover */
 }
 
 /* --- プロフィール --- */
@@ -60,7 +60,7 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #555;
+  border: 2px solid #bf5af2; /* Purple border */
 }
 
 .icon {
@@ -73,24 +73,26 @@ body {
 
 .self-introduction {
   flex: 1;
-  background-color: rgba(35, 35, 35, 0.85);
+  background-color: rgba(20, 20, 20, 0.9);
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(191, 90, 242, 0.1); /* Subtle purple glow */
 }
 
 .self-introduction a {
-  color: #ddd;
+  color: #bf5af2;
   text-decoration: none;
 }
 .self-introduction a:hover {
-  color: #fff;
+  color: #d48aff;
+  text-decoration: underline;
 }
 
 /* --- 作品一覧 --- */
 .mywork {
   flex: 1;
-  background-color: rgba(25, 25, 25, 0.85);
+  background-color: rgba(20, 20, 20, 0.9);
   padding: 20px 25px;
   border-radius: 10px;
   margin: 20px;
@@ -105,18 +107,19 @@ body {
 }
 
 .mywork-list {
-  width: 200px;
-  background-color: rgba(40, 40, 40, 0.8);
-  padding: 10px;
+  width: 220px; /* Slightly wider for buttons */
+  background-color: rgba(30, 30, 30, 0.8);
+  padding: 15px;
   text-align: center;
   border-radius: 8px;
-  border: 1px solid #333;
+  border: 1px solid #444;
   transition: 0.25s;
 }
 
 .mywork-list:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(191, 90, 242, 0.3); /* Purple glow */
+  border-color: #bf5af2;
 }
 
 .mywork-photo {
@@ -125,12 +128,44 @@ body {
   border-radius: 4px;
 }
 
+.mywork-list h4 {
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+
 .mywork-list h4 a {
   color: #eee;
   text-decoration: none;
 }
 .mywork-list h4 a:hover {
+  color: #bf5af2;
+}
+
+/* Link Buttons for AshVehicle */
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.link-btn {
+  display: block;
+  background-color: #333;
   color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: 0.2s;
+  border: 1px solid #555;
+}
+
+.link-btn:hover {
+  background-color: #bf5af2;
+  border-color: #bf5af2;
+  color: #000;
+  font-weight: bold;
 }
 
 /* --- プロフィール詳細・フォーム --- */
@@ -187,6 +222,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 22px;
-  border-left: 4px solid #999;
+  font-size: 22px;
+  border-left: 4px solid #bf5af2; /* Purple accent */
   padding-left: 10px;
 }

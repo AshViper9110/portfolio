@@ -1,67 +1,114 @@
+/* --- AshVehicle Theme Profile (Purple Edition) --- */
 
-/* --- Improved Profile Page Styles --- */
+.ContentWrapper {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 .ProfileCard {
-  background-color: rgba(20, 20, 20, 0.95);
-  border-radius: 16px;
-  padding: 40px;
-  border: 1px solid #333;
-  box-shadow: 0 10px 30px rgba(191, 90, 242, 0.15); /* Purple shadow */
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  position: relative;
+  padding: 50px;
+  
+  /* HUD Corners */
+  clip-path: polygon(
+    20px 0, 100% 0, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%, 
+    0 100%, 0 20px
+  );
+}
+
+/* Decorative HUD Lines */
+.ProfileCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+.ProfileCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent);
 }
 
 .ProfileHeader {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
+  gap: 40px;
+  margin-bottom: 50px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .circle-image-small {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #bf5af2; /* Purple border */
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 0 20px var(--color-accent-glow);
 }
 
 .ProfileName h3 {
-  font-size: 32px;
-  margin: 0 0 5px 0;
+  font-size: 42px;
   color: #fff;
-  border: none;
-  padding: 0;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
 }
 
 .sub-text {
-  font-size: 18px;
-  color: #aaa;
-  margin: 0 0 15px 0;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .role-text {
-  font-size: 16px;
-  color: #fff;
-  background-color: #bf5af2; /* Purple background */
-  padding: 5px 12px;
-  border-radius: 20px;
   display: inline-block;
-  margin: 0;
-  font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  background: rgba(191, 90, 242, 0.1);
+  border: 1px solid var(--color-accent);
+  color: #fff;
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
 }
 
+/* Sections */
 .ProfileSection {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .SectionTitle {
   font-size: 20px;
-  color: #eee;
-  border-left: 4px solid #bf5af2; /* Purple accent */
-  padding-left: 12px;
-  margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.SectionTitle::before {
+  content: '//';
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: bold;
 }
 
 /* Info Grid */
@@ -72,62 +119,84 @@
 }
 
 .InfoItem {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 15px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid var(--color-border);
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.InfoItem:hover {
+  border-left-color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .InfoItem .Label {
-  font-size: 12px;
-  color: #888;
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
   margin-bottom: 5px;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .InfoItem .Value {
   font-size: 16px;
   color: #fff;
-  line-height: 1.5;
 }
 
 /* Skill Grid */
 .SkillGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 15px;
 }
 
 .SkillItem {
-  background-color: rgba(40, 40, 40, 0.6);
-  border: 1px solid #444;
-  padding: 15px;
-  border-radius: 10px;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid var(--color-border);
+  padding: 20px;
   text-align: center;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: 0.3s;
+  position: relative;
 }
 
 .SkillItem:hover {
+  border-color: var(--color-accent);
   transform: translateY(-3px);
-  background-color: rgba(50, 50, 50, 0.8);
-  border-color: #bf5af2; /* Purple border on hover */
-  box-shadow: 0 0 10px rgba(191, 90, 242, 0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.SkillItem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent var(--color-accent) transparent transparent;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.SkillItem:hover::after {
+  opacity: 1;
 }
 
 .SkillName {
   display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
   font-size: 18px;
-  font-weight: bold;
   color: #fff;
   margin-bottom: 5px;
 }
 
 .SkillLevel {
-  display: block;
-  font-size: 13px;
-  color: #bbb;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
 }
 
 /* Qualification List */
@@ -136,31 +205,37 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
 .QualificationList li {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 12px 20px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  border: 1px solid var(--color-border);
   color: #ddd;
-  border-left: 3px solid #bf5af2; /* Purple accent */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Mobile Responsiveness */
+.QualificationList li::before {
+  content: '>';
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: bold;
+}
+
+/* Mobile */
 @media (max-width: 600px) {
   .ProfileHeader {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
   }
   
   .ProfileCard {
     padding: 20px;
-  }
-  
-  .InfoGrid, .SkillGrid, .QualificationList {
-    grid-template-columns: 1fr;
+    clip-path: none;
+    border-radius: 10px;
   }
 }

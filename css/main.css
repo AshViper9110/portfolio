@@ -237,10 +237,20 @@ a {
   opacity: 1;
 }
 
-.mywork-photo {
+.image-wrapper {
   width: 100%;
-  border-radius: 2px;
+  height: 140px;               /* 画像表示エリアの固定高さ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
   margin-bottom: 15px;
+}
+
+.mywork-photo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;         /* ロゴ全体を収める */
   filter: grayscale(20%);
   transition: 0.3s;
 }

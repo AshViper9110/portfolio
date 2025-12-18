@@ -334,3 +334,60 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bgScroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
+}
+
+/* Apply background animation to body */
+body {
+  animation: bgScroll 20s linear infinite;
+}
+
+/* Scroll Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays for children if needed */
+.mywork-list:nth-child(1) { transition-delay: 0.1s; }
+.mywork-list:nth-child(2) { transition-delay: 0.2s; }
+.mywork-list:nth-child(3) { transition-delay: 0.3s; }
+

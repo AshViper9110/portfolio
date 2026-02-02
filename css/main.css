@@ -7,7 +7,7 @@
   --color-accent: #bf5af2; /* Purple */
   --color-accent-glow: rgba(191, 90, 242, 0.5);
   --color-border: #333333;
-  
+
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -19,7 +19,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-body);
   /* Grid Background Pattern */
-  background-image: 
+  background-image:
     linear-gradient(rgba(191, 90, 242, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(191, 90, 242, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
@@ -27,7 +27,10 @@ body {
 }
 
 /* --- Typography --- */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   text-transform: uppercase;
   font-weight: 700;
@@ -53,7 +56,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .Title h1 {
@@ -81,7 +84,7 @@ a {
 }
 
 .Menu a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -120,16 +123,20 @@ a {
 
 .self-introduction {
   flex: 1;
-  background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.95));
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 0.9),
+    rgba(10, 10, 10, 0.95)
+  );
   padding: 30px;
   border: 1px solid var(--color-border);
   border-left: 4px solid var(--color-accent);
   position: relative;
   clip-path: polygon(
-    0 0, 
-    100% 0, 
-    100% calc(100% - 20px), 
-    calc(100% - 20px) 100%, 
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
     0 100%
   );
 }
@@ -172,7 +179,7 @@ a {
 }
 
 .mywork h3::after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: linear-gradient(90deg, var(--color-accent), transparent);
@@ -202,12 +209,12 @@ a {
   border-color: var(--color-accent);
   background-color: rgba(30, 30, 30, 0.8);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Corner accents for cards */
 .mywork-list::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -220,7 +227,7 @@ a {
 }
 
 .mywork-list::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -239,7 +246,7 @@ a {
 
 .image-wrapper {
   width: 100%;
-  height: 140px;               /* 画像表示エリアの固定高さ */
+  height: 140px; /* 画像表示エリアの固定高さ */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,9 +255,9 @@ a {
 }
 
 .mywork-photo {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;         /* ロゴ全体を収める */
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain; /* ロゴ全体を収める */
   filter: grayscale(20%);
   transition: 0.3s;
 }
@@ -324,12 +331,12 @@ a {
     text-align: center;
     padding: 20px;
   }
-  
+
   .self-introduction {
     border-left: 1px solid var(--color-border);
     border-top: 4px solid var(--color-accent);
   }
-  
+
   .mywork-list-main {
     grid-template-columns: 1fr;
   }
@@ -337,8 +344,12 @@ a {
 
 /* --- Animations --- */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInUp {
@@ -364,8 +375,12 @@ a {
 }
 
 @keyframes bgScroll {
-  0% { background-position: 0 0; }
-  100% { background-position: 50px 50px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
 }
 
 /* Apply background animation to body */
@@ -377,7 +392,9 @@ body {
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
   will-change: opacity, transform;
 }
 
@@ -387,7 +404,12 @@ body {
 }
 
 /* Staggered delays for children if needed */
-.mywork-list:nth-child(1) { transition-delay: 0.1s; }
-.mywork-list:nth-child(2) { transition-delay: 0.2s; }
-.mywork-list:nth-child(3) { transition-delay: 0.3s; }
-
+.mywork-list:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.mywork-list:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.mywork-list:nth-child(3) {
+  transition-delay: 0.3s;
+}

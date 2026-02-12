@@ -1,149 +1,244 @@
 ﻿<!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>TopParge</title>
+    <title>Portfolio | 平尾海翔</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <div class="Main animate-on-scroll">
+    <!-- ================= HEADER ================= -->
+    <header class="Main animate-on-scroll">
       <div class="Title">
-        <h1>portfrio</h1>
+        <h1>Portfolio</h1>
       </div>
-      <div class="Menu">
-        <p><a href="Profile.html">プロフィール</a></p>
-        <p class="contact-note">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=241210@st.yoshida-g.ac.jp"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-mail"
-          >
-            お問い合わせ
-          </a>
-        </p>
-      </div>
-    </div>
 
-    <div class="Profile animate-on-scroll">
-      <div class="icon">
-        <img class="circle-image" src="photo/icon.webp" />
-      </div>
-      <div class="self-introduction">
-        <h3>自己紹介</h3>
-        <h4>ゲームエンジニア学科2年 平尾海翔</h4>
-        <p>
-          趣味でMinecraftのmod作成、3DmodelやVRChat想定のアイテムを作成している人
-        </p>
-        <p><a href="Profile.html">プロフィール</a></p>
-      </div>
-    </div>
+      <nav class="Menu">
+        <a href="Profile.html">プロフィール</a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=241210@st.yoshida-g.ac.jp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          お問い合わせ
+        </a>
+      </nav>
+    </header>
 
-    <!-- ここから 個人製作セクション -->
-    <div class="mywork animate-on-scroll">
-      <h3>個人製作</h3>
-      <div class="mywork-list-main">
-        <div class="mywork-list">
-          <img class="mywork-photo" src="photo/AshVhiecle.png" />
-          <h4>AshVehicle (Addon 開発)</h4>
-          <p>570.0K DownLoad (2025/11/21現在)</p>
-          <div class="link-container">
-            <a
-              href="https://ashviper.github.io/AshVehicle-site/"
-              target="_blank"
-              class="link-btn"
-              >Official Site</a
-            >
-          </div>
+    <!-- ================= MAIN ================= -->
+    <main>
+      <!-- ===== Profile ===== -->
+      <section class="Profile animate-on-scroll">
+        <div class="icon">
+          <img
+            class="circle-image"
+            src="photo/icon.webp"
+            alt="プロフィールアイコン"
+          />
         </div>
-        <div class="mywork-list">
-          <img class="mywork-photo" src="photo/AirCombat.png" />
-          <h4>Air Combat</h4>
-          <div class="link-container">
-            <a
-              href="https://ashviper.github.io/AirfighterGame-Web/"
-              target="_blank"
-              class="link-btn"
-              >Game Link</a
-            >
-          </div>
-        </div>
-        <div class="mywork-list">
-          <img class="mywork-photo" src="photo/RaceGame.png" />
-          <h4>Car Race</h4>
-          <div class="link-container">
-            <a href="" target="_blank" class="link-btn">Tempalte</a>
-          </div>
-        </div>
-        <div class="mywork-list">
-          <img class="mywork-photo" src="photo/ParainfactionIcon.png" />
-          <h4>ParainfactionMod</h4>
-          <div class="link-container">
-            <a
-              href="https://github.com/AshViper/ParaInfaction"
-              target="_blank"
-              class="link-btn"
-              >GitHub</a
-            >
-          </div>
-        </div>
-        <div class="mywork-list">
-          <img class="mywork-photo" src="photo/webGame1.png" />
-          <h4>Web Game</h4>
-          <div class="link-container">
-            <a
-              href="https://github.com/AshViper9110/HTMLGame-test"
-              target="_blank"
-              class="link-btn"
-              >GitHub</a
-            >
-            <a
-              href="https://ashviper9110.github.io/HTMLGame-test/"
-              target="_blank"
-              class="link-btn"
-              >Play Game</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ここまで 個人製作 -->
 
-    <div class="mywork animate-on-scroll">
-      <h3>作品</h3>
-      <div class="mywork-list-main">
-        <div class="mywork-list">
+        <div class="self-introduction">
+          <h3>自己紹介</h3>
+          <h4>ゲームエンジニア学科2年 平尾海翔</h4>
+          <p>
+            Minecraft Addon開発、Webゲーム制作、
+            3Dモデル制作など幅広く活動しています。
+          </p>
+          <p>
+            <a href="Profile.html">詳細プロフィールを見る →</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== 代表作（強調セクション） ===== -->
+      <section class="mywork animate-on-scroll">
+        <h3>代表作</h3>
+
+        <div class="mywork-list-main">
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img
+                class="mywork-photo"
+                src="photo/AshVhiecle.png"
+                alt="AshVehicle Addon"
+              />
+            </div>
+
+            <h4>AshVehicle (Addon開発)</h4>
+
+            <p class="achievement">累計 570,000 DL（2025年11月時点）</p>
+
+            <div class="link-container">
+              <a
+                href="https://ashviper.github.io/AshVehicle-site/"
+                target="_blank"
+                class="link-btn"
+              >
+                Official Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 個人制作 ===== -->
+      <section class="mywork animate-on-scroll">
+        <h3>個人制作</h3>
+
+        <div class="mywork-list-main">
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img
+                class="mywork-photo"
+                src="photo/AirCombat.png"
+                alt="Air Combat"
+              />
+            </div>
+            <h4>Air Combat</h4>
+            <div class="link-container">
+              <a
+                href="https://ashviper.github.io/AirfighterGame-Web/"
+                target="_blank"
+                class="link-btn"
+              >
+                Play Game
+              </a>
+            </div>
+          </div>
+
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img
+                class="mywork-photo"
+                src="photo/RaceGame.png"
+                alt="Car Race Game"
+              />
+            </div>
+            <h4>Car Race</h4>
+          </div>
+
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img
+                class="mywork-photo"
+                src="photo/ParainfactionIcon.png"
+                alt="ParaInfaction Mod"
+              />
+            </div>
+            <h4>Parainfaction Mod</h4>
+            <div class="link-container">
+              <a
+                href="https://github.com/AshViper/ParaInfaction"
+                target="_blank"
+                class="link-btn"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img
+                class="mywork-photo"
+                src="photo/webGame1.png"
+                alt="Web Game"
+              />
+            </div>
+            <h4>Web Game</h4>
+            <div class="link-container">
+              <a
+                href="https://github.com/AshViper9110/HTMLGame-test"
+                target="_blank"
+                class="link-btn"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://ashviper9110.github.io/HTMLGame-test/"
+                target="_blank"
+                class="link-btn"
+              >
+                Play Game
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 作品（詳細ページあり） ===== -->
+      <section class="mywork animate-on-scroll">
+        <h3>作品</h3>
+
+        <div class="mywork-list-main">
           <a href="mywork1.html" class="work-link">
-            <img class="mywork-photo" src="photo/2dAction1.png" />
-            <h4>2DAction</h4>
+            <div class="mywork-list">
+              <div class="image-wrapper">
+                <img
+                  class="mywork-photo"
+                  src="photo/2dAction1.png"
+                  alt="2D Action Game"
+                />
+              </div>
+              <h4>2D Action</h4>
+            </div>
           </a>
-        </div>
-        <div class="mywork-list">
+
           <a href="mywork2.html" class="work-link">
-            <img class="mywork-photo" src="photo/matoate1.png" />
-            <h4>的あて</h4>
+            <div class="mywork-list">
+              <div class="image-wrapper">
+                <img
+                  class="mywork-photo"
+                  src="photo/matoate1.png"
+                  alt="的あてゲーム"
+                />
+              </div>
+              <h4>的あて</h4>
+            </div>
           </a>
-        </div>
-        <div class="mywork-list">
+
           <a href="mywork3.html" class="work-link">
-            <img class="mywork-photo" src="photo/blockbreak1.png" />
-            <h4>Blockbreak</h4>
+            <div class="mywork-list">
+              <div class="image-wrapper">
+                <img
+                  class="mywork-photo"
+                  src="photo/blockbreak1.png"
+                  alt="Block Breaker"
+                />
+              </div>
+              <h4>Block Breaker</h4>
+            </div>
           </a>
-        </div>
-        <div class="mywork-list">
+
           <a href="mywork4.html" class="work-link">
-            <img class="mywork-photo" src="photo/jetjam.png" />
-            <h4>JetJam</h4>
+            <div class="mywork-list">
+              <div class="image-wrapper">
+                <img
+                  class="mywork-photo"
+                  src="photo/jetjam.png"
+                  alt="JetJam Game"
+                />
+              </div>
+              <h4>JetJam</h4>
+            </div>
           </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 0">
+      <p>© 2026 平尾海翔</p>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,36 +1,85 @@
 ﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>2D Action | Portfolio</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="Main">
-      <div class="Title">
-        <h2>作品</h2>
-      </div>
-      <div class="Menu">
-        <p><a href="index.html">Top</a></p>
+<body>
+
+  <!-- ヘッダー -->
+  <div class="Main">
+    <div class="Title">
+      <h2>作品詳細</h2>
+    </div>
+    <div class="Menu">
+      <p><a href="index.html">← Topに戻る</a></p>
+    </div>
+  </div>
+
+  <!-- メイン -->
+  <div class="work-detail">
+
+    <!-- タイトル + メタ -->
+    <div class="work-header card">
+      <h2>2D Action</h2>
+
+      <div class="work-meta">
+        <span>ジャンル：2Dアクション</span>
+        <span>技術：Unity / C#</span>
       </div>
     </div>
-    <div class="mywork-list-main">
-      <div class="mywork-list">
-        <img class="mywork-photo" src="photo/2dAction1.png" />
-        <h4>home画面</h4>
+
+    <!-- 画像 -->
+    <div class="work-images card">
+      <div class="image-card">
+        <img src="photo/2dAction1.png" />
+        <p>ホーム画面</p>
       </div>
-      <div class="mywork-list">
-        <img class="mywork-photo" src="photo/2dAction2.png" />
-        <h4>ゲーム開始直前</h4>
+
+      <div class="image-card">
+        <img src="photo/2dAction2.png" />
+        <p>ゲーム開始直前</p>
       </div>
     </div>
-    <div class="mywork-list-Contents">
+
+    <!-- 概要 -->
+    <div class="work-section card">
       <h3>概要</h3>
-      <p>ステージ上に配置されたギミックを使って最速クリアを目指すRTA風ゲーム</p>
       <p>
-        重力反転や、ジャンプ台が多く置かれているので、それらを使いつつ最適な移動ルートを探すのが醍醐味
+        ステージ上のギミックを活用し、最速クリアを目指すRTA風アクションゲーム。
+      </p>
+      <p>
+        重力反転やジャンプ台を使いながら、
+        最適なルートを探すのが特徴。
       </p>
     </div>
-  </body>
+
+    <!-- 特徴 -->
+    <div class="work-section card">
+      <h3>特徴</h3>
+      <ul>
+        <li>重力反転による自由な移動</li>
+        <li>ルート最適化のゲーム性</li>
+        <li>テンポの良いステージ設計</li>
+      </ul>
+    </div>
+
+    <!-- 技術的工夫（追加） -->
+    <div class="work-section card">
+      <h3>技術的工夫</h3>
+      <p>
+        プレイヤー状態を管理することで、
+        重力反転時の挙動の破綻を防止。
+      </p>
+      <p>
+        ルート最適化を楽しめるよう、
+        ステージ構成とギミック配置を調整。
+      </p>
+    </div>
+
+  </div>
+
+</body>
 </html>

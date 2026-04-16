@@ -1,36 +1,82 @@
 ﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>的あて | Portfolio</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="Main">
-      <div class="Title">
-        <h2>作品</h2>
-      </div>
-      <div class="Menu">
-        <p><a href="index.html">Top</a></p>
+<body>
+
+  <!-- ヘッダー -->
+  <div class="Main">
+    <div class="Title">
+      <h2>作品詳細</h2>
+    </div>
+    <div class="Menu">
+      <p><a href="index.html">← Topに戻る</a></p>
+    </div>
+  </div>
+
+  <!-- 本文 -->
+  <div class="work-detail">
+
+    <!-- タイトル + メタ -->
+    <div class="work-header card">
+      <h2>的あて</h2>
+
+      <div class="work-meta">
+        <span>ジャンル：シューティング</span>
+        <span>技術：Unity / C#</span>
       </div>
     </div>
-    <div class="mywork-list-main">
-      <div class="mywork-list">
-        <img class="mywork-photo" src="photo/matoate1.png" />
-        <h4>ゲーム起動時</h4>
+
+    <!-- 画像 -->
+    <div class="work-images card">
+      <div class="image-card">
+        <img src="photo/matoate1.png" />
+        <p>ゲーム起動時</p>
       </div>
-      <div class="mywork-list">
-        <img class="mywork-photo" src="photo/matoate2.png" />
-        <h4>プレイ中</h4>
+
+      <div class="image-card">
+        <img src="photo/matoate2.png" />
+        <p>プレイ中</p>
       </div>
     </div>
-    <div class="mywork-list-Contents">
+
+    <!-- 概要 -->
+    <div class="work-section card">
       <h3>概要</h3>
-      <p>自身のAIMを使って制限時間内に高得点を叩き出す射撃ゲーム。</p>
       <p>
-        最初はシンプルな射撃ゲームだったので、AimLabのようにやりごたえを欲しかったので射的をベースに作成した
+        制限時間内にターゲットを撃ち、
+        高得点を目指すシューティングゲーム。
       </p>
     </div>
-  </body>
+
+    <!-- 特徴 -->
+    <div class="work-section card">
+      <h3>特徴</h3>
+      <ul>
+        <li>AIM精度を重視したゲーム設計</li>
+        <li>スコアアタック形式</li>
+        <li>AimLabを意識したトレーニング要素</li>
+      </ul>
+    </div>
+
+    <!-- 技術的工夫（追加） -->
+    <div class="work-section card">
+      <h3>技術的工夫</h3>
+      <p>
+        ターゲットの出現制御やスコア管理を実装し、
+        プレイヤーの成長を感じられる設計にした。
+      </p>
+      <p>
+        シンプルながらも繰り返しプレイしたくなるよう、
+        ゲームバランスを調整。
+      </p>
+    </div>
+
+  </div>
+
+</body>
 </html>

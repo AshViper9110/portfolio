@@ -23,6 +23,12 @@
       </div>
 
       <nav class="Menu">
+        <a href="#featured">代表作</a>
+        <a href="#personal">個人制作</a>
+        <a href="#works">学校制作</a>
+      </nav>
+
+      <nav class="Menu">
         <a href="Profile.html">プロフィール</a>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=241210@st.yoshida-g.ac.jp"
@@ -60,21 +66,22 @@
       </section>
 
       <!-- ===== 代表作（強調セクション） ===== -->
-     <section class="mywork animate-on-scroll">
+      <section id="featured" class="mywork animate-on-scroll">
         <h3>代表作</h3>
 
         <div class="featured-work">
-
           <div class="featured-image">
-            <img class="mywork-photo" src="photo/AshVhiecle.png" />
+            <img
+              class="mywork-photo"
+              src="photo/AshVhiecle.png"
+              style="width: 50%; height: 50%"
+            />
           </div>
 
           <div class="featured-content">
             <h4>AshVehicle (Addon開発)</h4>
 
-            <p class="achievement">
-              累計 945,247 DL（2026/4/16時点）
-            </p>
+            <p class="achievement">累計 1,030,674 DL（2026/4/17時点）</p>
 
             <p class="work-desc">
               Minecraft向けの乗り物追加Addon。リアルな挙動と拡張性を重視して開発。
@@ -82,134 +89,155 @@
 
             <div class="tag-container">
               <span class="tag">Minecraft</span>
-              <span class="tag">JavaScript</span>
+              <span class="tag">Java</span>
               <span class="tag">Addon</span>
+              <span class="tag">製作期間9か月～</span>
+              <span class="tag">Gitあり</span>
             </div>
 
             <div class="link-container">
-              <a href="https://ashviper.github.io/AshVehicle-site/" target="_blank" class="link-btn primary">
+              <a
+                href="https://ashviper.github.io/AshVehicle-site/"
+                target="_blank"
+                class="link-btn primary"
+              >
                 ▶ Official Site
               </a>
             </div>
           </div>
-
         </div>
       </section>
 
       <!-- ===== 個人制作 ===== -->
-      <section class="mywork animate-on-scroll">
-      <h3>個人制作</h3>
-
-      <div class="mywork-list-main">
-
-        <!-- Air Combat -->
-        <div class="mywork-list">
-          <div class="image-wrapper">
-            <img class="mywork-photo" src="photo/AirCombat.png" />
-          </div>
-
-          <h4>Air Combat</h4>
-
-          <p class="work-desc">
-            空戦をテーマにしたブラウザアクションゲーム
-          </p>
-
-          <div class="tag-container">
-            <span class="tag">JavaScript</span>
-            <span class="tag">WebGL</span>
-          </div>
-
-          <div class="link-container">
-            <a href="https://ashviper.github.io/AirfighterGame-Web/" target="_blank" class="link-btn primary">
-              ▶ Play
-            </a>
-          </div>
-        </div>
-
-        <!-- Car Race -->
-        <div class="mywork-list">
-          <div class="image-wrapper">
-            <img class="mywork-photo" src="photo/RaceGame.png" />
-          </div>
-
-          <h4>Car Race</h4>
-
-          <p class="work-desc">
-            ドリフト挙動にこだわったレースゲーム
-          </p>
-
-          <div class="tag-container">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-          </div>
-
-          <div class="link-container">
-            <a href="https://github.com/AshViper/SimpleDriftRace" target="_blank" class="link-btn">
-              GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Parainfaction -->
-        <div class="mywork-list">
-          <div class="image-wrapper">
-            <img class="mywork-photo" src="photo/ParainfactionIcon.png" />
-          </div>
-
-          <h4>Parainfaction Mod</h4>
-
-          <p class="work-desc">
-            Minecraft用の拡張Mod
-          </p>
-
-          <div class="tag-container">
-            <span class="tag">Java</span>
-            <span class="tag">Modding</span>
-          </div>
-
-          <div class="link-container">
-            <a href="https://github.com/AshViper/ParaInfaction" target="_blank" class="link-btn">
-              GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Web Game -->
-        <div class="mywork-list">
-          <div class="image-wrapper">
-            <img class="mywork-photo" src="photo/webGame1.png" />
-          </div>
-
-          <h4>Web Game</h4>
-
-          <p class="work-desc">
-            HTML / JSで制作したブラウザゲーム
-          </p>
-
-          <div class="tag-container">
-            <span class="tag">HTML</span>
-            <span class="tag">JavaScript</span>
-          </div>
-
-          <div class="link-container">
-            <a href="https://github.com/AshViper9110/HTMLGame-test" target="_blank" class="link-btn">
-              GitHub
-            </a>
-            <a href="https://ashviper9110.github.io/HTMLGame-test/" target="_blank" class="link-btn primary">
-              ▶ Play
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-      <!-- ===== 作品（詳細ページあり） ===== -->
-      <section class="mywork animate-on-scroll">
-        <h3>作品</h3>
+      <section id="personal" class="mywork animate-on-scroll">
+        <h3>個人制作</h3>
 
         <div class="mywork-list-main">
-          
+          <!-- Air Combat -->
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img class="mywork-photo" src="photo/AirCombat.png" />
+            </div>
+
+            <h4>Air Combat</h4>
+
+            <p class="work-desc">空戦をテーマにしたブラウザアクションゲーム</p>
+
+            <div class="tag-container">
+              <span class="tag">Unity</span>
+              <span class="tag">WebGL</span>
+              <span class="tag">製作期間1週間</span>
+            </div>
+
+            <div class="link-container">
+              <a
+                href="https://ashviper.github.io/AirfighterGame-Web/"
+                target="_blank"
+                class="link-btn primary"
+              >
+                ▶ Play
+              </a>
+            </div>
+          </div>
+
+          <!-- Car Race -->
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img class="mywork-photo" src="photo/RaceGame.png" />
+            </div>
+
+            <h4>Car Race</h4>
+
+            <p class="work-desc">ドリフト挙動にこだわったレースゲーム</p>
+
+            <div class="tag-container">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">製作期間1週間</span>
+              <span class="tag">Gitあり</span>
+            </div>
+
+            <div class="link-container">
+              <a
+                href="https://github.com/AshViper/SimpleDriftRace"
+                target="_blank"
+                class="link-btn"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Parainfaction -->
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img class="mywork-photo" src="photo/ParainfactionIcon.png" />
+            </div>
+
+            <h4>Parainfaction Mod</h4>
+
+            <p class="work-desc">Minecraft用の拡張Mod</p>
+
+            <div class="tag-container">
+              <span class="tag">Java</span>
+              <span class="tag">Modding</span>
+              <span class="tag">製作期間1週間～</span>
+              <span class="tag">Gitあり</span>
+            </div>
+
+            <div class="link-container">
+              <a
+                href="https://github.com/AshViper/ParaInfaction"
+                target="_blank"
+                class="link-btn"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Web Game -->
+          <div class="mywork-list">
+            <div class="image-wrapper">
+              <img class="mywork-photo" src="photo/webGame1.png" />
+            </div>
+
+            <h4>Web Game</h4>
+
+            <p class="work-desc">HTML / JSで制作したブラウザゲーム</p>
+
+            <div class="tag-container">
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">製作期間1週間</span>
+              <span class="tag">Gitあり</span>
+            </div>
+
+            <div class="link-container">
+              <a
+                href="https://github.com/AshViper9110/HTMLGame-test"
+                target="_blank"
+                class="link-btn"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://ashviper9110.github.io/HTMLGame-test/"
+                target="_blank"
+                class="link-btn primary"
+              >
+                ▶ Play
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 作品（詳細ページあり） ===== -->
+      <section id="works" class="mywork animate-on-scroll">
+        <h3>学校制作</h3>
+
+        <div class="mywork-list-main">
           <!-- JetJam -->
           <a href="mywork4.html" class="work-link">
             <div class="mywork-list">
@@ -224,29 +252,34 @@
               </p>
 
               <div class="tag-container">
+                <span class="tag">個人製作</span>
                 <span class="tag">Unity</span>
                 <span class="tag">C#</span>
                 <span class="tag">Multiplayer</span>
+                <span class="tag">製作期間4か月</span>
+                <span class="tag">Gitあり</span>
               </div>
             </div>
           </a>
 
-          <!-- Block Breaker -->
-          <a href="mywork3.html" class="work-link">
+          <!-- 2D Action -->
+          <a href="mywork1.html" class="work-link">
             <div class="mywork-list">
               <div class="image-wrapper">
-                <img class="mywork-photo" src="photo/blockbreak1.png" />
+                <img class="mywork-photo" src="photo/2dAction1.png" />
               </div>
 
-              <h4>Block Breaker</h4>
+              <h4>2D Action</h4>
 
-              <p class="work-desc">
-                シンプルなブロック崩し＋拡張要素付き
-              </p>
+              <p class="work-desc">重力反転を活用したRTA系アクションゲーム</p>
 
               <div class="tag-container">
+                <span class="tag">個人製作</span>
                 <span class="tag">Unity</span>
                 <span class="tag">C#</span>
+                <span class="tag">Soloplayer</span>
+                <span class="tag">2D</span>
+                <span class="tag">製作期間4か月</span>
               </div>
             </div>
           </a>
@@ -265,32 +298,36 @@
               </p>
 
               <div class="tag-container">
+                <span class="tag">個人製作</span>
                 <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Soloplayer</span>
                 <span class="tag">FPS</span>
+                <span class="tag">製作期間1か月</span>
               </div>
             </div>
           </a>
 
-          <!-- 2D Action -->
-          <a href="mywork1.html" class="work-link">
+          <!-- Block Breaker -->
+          <a href="mywork3.html" class="work-link">
             <div class="mywork-list">
               <div class="image-wrapper">
-                <img class="mywork-photo" src="photo/2dAction1.png" />
+                <img class="mywork-photo" src="photo/blockbreak1.png" />
               </div>
 
-              <h4>2D Action</h4>
+              <h4>Block Breaker</h4>
 
-              <p class="work-desc">
-                重力反転を活用したRTA系アクションゲーム
-              </p>
+              <p class="work-desc">シンプルなブロック崩し＋拡張要素付き</p>
 
               <div class="tag-container">
+                <span class="tag">個人製作</span>
                 <span class="tag">Unity</span>
-                <span class="tag">2D</span>
+                <span class="tag">C#</span>
+                <span class="tag">Soloplayer</span>
+                <span class="tag">製作期間1か月</span>
               </div>
             </div>
           </a>
-
         </div>
       </section>
     </main>

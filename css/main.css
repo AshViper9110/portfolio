@@ -26,6 +26,12 @@ body {
   min-height: 100vh;
 }
 
+.featured-work {
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center; /* 縦中央（任意） */
+}
+
 /* --- Typography --- */
 h1,
 h2,
@@ -479,7 +485,7 @@ body {
 .card:hover {
   border-color: var(--color-accent);
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* コーナー装飾（近未来風） */

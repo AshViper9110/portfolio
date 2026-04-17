@@ -12,18 +12,21 @@
   border: 1px solid var(--color-border);
   position: relative;
   padding: 50px;
-  
+
   /* HUD Corners */
   clip-path: polygon(
-    20px 0, 100% 0, 
-    100% calc(100% - 20px), calc(100% - 20px) 100%, 
-    0 100%, 0 20px
+    20px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 20px
   );
 }
 
 /* Decorative HUD Lines */
 .ProfileCard::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 20px;
@@ -34,7 +37,7 @@
 }
 
 .ProfileCard::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 20px;
@@ -63,6 +66,7 @@
 }
 
 .ProfileName h3 {
+  flex-direction: column;
   font-size: 42px;
   color: #fff;
   margin-bottom: 5px;
@@ -78,7 +82,7 @@
 }
 
 .role-text {
-  display: inline-block;
+  display: flex;
   background: rgba(191, 90, 242, 0.1);
   border: 1px solid var(--color-accent);
   color: #fff;
@@ -105,7 +109,7 @@
 }
 
 .SectionTitle::before {
-  content: '//';
+  content: "//";
   color: var(--color-accent);
   font-family: var(--font-mono);
   font-weight: bold;
@@ -163,11 +167,11 @@
 .SkillItem:hover {
   border-color: var(--color-accent);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .SkillItem::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -194,9 +198,18 @@
 }
 
 .SkillLevel {
+  display: block;
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--color-text-muted);
+}
+
+.SkillPeriod {
+  font-size: 10px;
+  padding: 4px 8px;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
 }
 
 /* Qualification List */
@@ -220,7 +233,7 @@
 }
 
 .QualificationList li::before {
-  content: '>';
+  content: ">";
   color: var(--color-accent);
   font-family: var(--font-mono);
   font-weight: bold;
@@ -232,7 +245,7 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .ProfileCard {
     padding: 20px;
     clip-path: none;

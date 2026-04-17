@@ -1,62 +1,80 @@
 ﻿<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <title>JetJam | Portfolio</title>
-  <link rel="stylesheet" href="css/main.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>JetJam | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
-
-  <!-- ヘッダー -->
-  <div class="Main">
-    <div class="Title">
-      <h2>作品詳細</h2>
-    </div>
-    <div class="Menu">
-      <p><a href="index.html">← Topに戻る</a></p>
-    </div>
-  </div>
-
-  <!-- 本文 -->
-  <div class="work-detail">
-
-    <div class="work-header card">
-      <h2>JetJam</h2>
-
-      <div class="work-meta">
-        <span>ジャンル：レース</span>
-        <span>技術：Unity / C# / MagicOnion</span>
+  <body>
+    <!-- ヘッダー -->
+    <div class="Main">
+      <div class="Title">
+        <h2>作品詳細</h2>
+      </div>
+      <div class="Menu">
+        <p><a href="index.html">← Topに戻る</a></p>
       </div>
     </div>
 
-    <div class="work-images card">
-      <div class="image-card">
-        <img src="photo/jetjam.png" />
-        <p>ゲーム画面</p>
+    <!-- 本文 -->
+    <div class="work-detail">
+      <div class="work-header card">
+        <h2>JetJam</h2>
+
+        <div class="work-meta">
+          <span>ジャンル：レース</span>
+          <span>技術：Unity / C# / MagicOnion</span>
+        </div>
+        <div class="link-container">
+          <a
+            href="https://github.com/AshViper9110/realtime-game"
+            target="_blank"
+            class="link-btn"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
-      <div class="image-card">
-        <img src="photo/jetjamroom.png" />
-        <p>ルーム画面</p>
+
+      <div class="work-images card">
+        <div class="image-card">
+          <img src="photo/jetjam.png" />
+          <p>ゲーム画面</p>
+        </div>
+        <div class="image-card">
+          <img src="photo/jetjamroom.png" />
+          <p>ルーム画面</p>
+        </div>
+      </div>
+
+      <div class="work-images card">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OSqPGjTLNrI?autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <div class="work-section card">
+        <h3>概要</h3>
+        <p>MagicOnionを用いたリアルタイムマルチプレイレースゲーム。</p>
+        <p>プレイヤー同士で同期しながらレースを行う設計。</p>
+      </div>
+
+      <div class="work-section card">
+        <h3>特徴</h3>
+        <ul>
+          <li>リアルタイム通信によるマルチプレイ</li>
+          <li>ルーム作成・参加機能</li>
+          <li>レースゲームとしての操作性</li>
+        </ul>
       </div>
     </div>
-
-    <div class="work-section card">
-      <h3>概要</h3>
-      <p>MagicOnionを用いたリアルタイムマルチプレイレースゲーム。</p>
-      <p>プレイヤー同士で同期しながらレースを行う設計。</p>
-    </div>
-
-    <div class="work-section card">
-      <h3>特徴</h3>
-      <ul>
-        <li>リアルタイム通信によるマルチプレイ</li>
-        <li>ルーム作成・参加機能</li>
-        <li>レースゲームとしての操作性</li>
-      </ul>
-    </div>
-
-  </div>
-
-</body>
+  </body>
 </html>
